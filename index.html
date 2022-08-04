@@ -1,0 +1,85 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+<script src="server.js"></script>
+</head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+form {
+  font-family: Arial;
+
+}
+
+input {
+    width: 952px;
+    height: 45px;
+    margin-top: -4px;
+}
+
+.container {
+  margin-left: 500px;
+  margin-top: 15px;
+}
+
+
+
+button[type=text], input[type=submit] {
+  width: 100%;
+  margin: 50px 0;
+  display: inline-block;
+  box-sizing: border-box;
+
+
+
+}
+
+
+button[type=submit] {
+  background-color: #167bff;
+  color: white;
+  border: none;
+  left: 1465px;
+  top: 24px;
+  position: absolute;
+  padding: 15px 32px;
+
+
+
+}
+
+.app {
+    background-color: lightblue;
+    padding: 5px;
+}
+
+button[type=submit]:hover {
+  opacity: 0.8;
+}
+</style>
+
+
+
+<body>
+<div class="app">  
+    <p style="position: absolute; top: 0px; font-weight:bold; font-size: 30px;">Sign up for our Daily Insider</p>
+
+    <form method="POST">
+
+    <div class="container" style="background-color:white">
+        <input type="text" placeholder="Email address" name="email" required>
+    </div>
+
+
+    <div class="buttoncreation">
+        <button type="submit" class="custombutton" value="Subscribe" onclick="myFunction()">Subscribe</button>
+    </div>
+    </form>
+</div>  
+</body>
+
+</html>
+
+
